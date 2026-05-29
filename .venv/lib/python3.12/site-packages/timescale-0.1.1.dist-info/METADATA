@@ -1,0 +1,167 @@
+Metadata-Version: 2.4
+Name: timescale
+Version: 0.1.1
+Summary: Python tools for time and astronomical calculations
+Author: Tyler Sutterley, Karen Alley, Kelly Brunt, Susan Howard, Laurie Padman, Matt Siegfried
+Author-email: tsutterl@uw.edu
+Maintainer: timescale contributors
+License: MIT License
+        
+        Copyright (c) 2023 Tyler C Sutterley
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: Homepage, https://timescale.readthedocs.io
+Project-URL: Documentation, https://timescale.readthedocs.io
+Project-URL: Repository, https://github.com/pyTMD/timescale
+Project-URL: Issues, https://github.com/pyTMD/timescale/issues
+Keywords: Time,Leap Seconds,TAI,GPS,UT1,TT
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Scientific/Engineering :: Physics
+Requires-Python: ~=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: lxml
+Requires-Dist: numpy
+Requires-Dist: python-dateutil
+Requires-Dist: scipy>=1.10.1
+Provides-Extra: doc
+Requires-Dist: docutils; extra == "doc"
+Requires-Dist: graphviz; extra == "doc"
+Requires-Dist: myst-nb; extra == "doc"
+Requires-Dist: numpydoc; extra == "doc"
+Requires-Dist: sphinx; extra == "doc"
+Requires-Dist: sphinx-argparse>=0.4; extra == "doc"
+Requires-Dist: sphinxcontrib-bibtex; extra == "doc"
+Requires-Dist: sphinx-design; extra == "doc"
+Requires-Dist: sphinx_rtd_theme; extra == "doc"
+Provides-Extra: dev
+Requires-Dist: flake8; extra == "dev"
+Requires-Dist: gh; extra == "dev"
+Requires-Dist: pytest>=4.6; extra == "dev"
+Requires-Dist: pytest-cov; extra == "dev"
+Requires-Dist: pytest-xdist; extra == "dev"
+Dynamic: license-file
+
+# timescale
+
+[![License](https://img.shields.io/github/license/pyTMD/timescale)](https://github.com/pyTMD/timescale/blob/main/LICENSE)
+[![Documentation Status](https://readthedocs.org/projects/timescale/badge/?version=latest)](https://timescale.readthedocs.io/en/latest/?badge=latest)
+[![PyPI](https://img.shields.io/pypi/v/timescale.svg)](https://pypi.python.org/pypi/timescale/)
+[![conda-forge](https://img.shields.io/conda/vn/conda-forge/timescale)](https://anaconda.org/conda-forge/timescale)
+[![commits-since](https://img.shields.io/github/commits-since/pyTMD/timescale/latest)](https://github.com/pyTMD/timescale/releases/latest)
+[![zenodo](https://zenodo.org/badge/DOI/10.5281/zenodo.5555395.svg)](https://doi.org/10.5281/zenodo.5555395)
+
+Python tools for time and astronomical calculations
+
+For more information: see the documentation at [timescale.readthedocs.io](https://timescale.readthedocs.io/)
+
+## Installation
+
+From PyPI:
+
+```bash
+python3 -m pip install timescale
+```
+
+Using `conda` or `mamba` from conda-forge:
+
+```bash
+conda install -c conda-forge timescale
+```
+
+```bash
+mamba install -c conda-forge timescale
+```
+
+Development version from GitHub:
+
+```bash
+python3 -m pip install git+https://github.com/pyTMD/timescale.git
+```
+
+### Running with Pixi
+
+Alternatively, you can use [Pixi](https://pixi.sh/) for a streamlined workspace environment:
+
+1. Install Pixi following the [installation instructions](https://pixi.sh/latest/#installation)
+2. Clone the project repository:
+
+```bash
+git clone https://github.com/pyTMD/timescale.git
+```
+
+3. Move into the `timescale` directory
+
+```bash
+cd timescale
+```
+
+4. Install dependencies and start a shell to run programs:
+
+```bash
+pixi shell
+```
+
+## Dependencies
+
+- [dateutil: powerful extensions to datetime](https://dateutil.readthedocs.io/en/stable/)
+- [lxml: processing XML and HTML in Python](https://pypi.python.org/pypi/lxml)
+- [numpy: Scientific Computing Tools For Python](https://www.numpy.org)
+- [scipy: Scientific Tools for Python](https://www.scipy.org/)
+
+## References
+
+> T. C. Sutterley, T. Markus, T. A. Neumann, M. R. van den Broeke, J. M. van Wessem, and S. R. M. Ligtenberg,
+> "Antarctic ice shelf thickness change from multimission lidar mapping", *The Cryosphere*,
+> 13, 1801-1817, (2019). [doi: 10.5194/tc-13-1801-2019](https://doi.org/10.5194/tc-13-1801-2019)
+
+## Download
+
+The program homepage is:  
+<https://github.com/pyTMD/timescale>
+
+A zip archive of the latest version is available directly at:  
+<https://github.com/pyTMD/timescale/archive/main.zip>
+
+## Disclaimer
+
+This package includes software developed at NASA Goddard Space Flight Center (GSFC) and the University of Washington Applied Physics Laboratory (UW-APL).
+It is not sponsored or maintained by the Universities Space Research Association (USRA), AVISO or NASA.
+The software is provided here for your convenience but *with no guarantees whatsoever*.
+
+## Contributing
+
+This project contains work and contributions from the [scientific community](./CONTRIBUTORS.md).
+If you would like to contribute to the project, please have a look at the [contribution guidelines](./doc/source/getting_started/Contributing.rst), [open issues](https://github.com/pyTMD/timescale/issues) and [discussions board](https://github.com/pyTMD/timescale/discussions).
+
+## License
+
+The content of this project is licensed under the [Creative Commons Attribution 4.0 Attribution license](https://creativecommons.org/licenses/by/4.0/) and the source code is licensed under the [MIT license](LICENSE).
